@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth  ;
+}
+
+
+.line {
+    background-color: black;
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin:9px 0;
+}
+
+.hamburger-active > span:nth-child(1){
+    transform: rotate(45deg);
+}
+.hamburger-active > span:nth-child(2){
+    width: 0;
+}
+.hamburger-active > span:nth-child(3){
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+/* navbar fixed */
+.navbar-fixed {
+    position: fixed;
+    background-color: rgba(237, 237, 241, 0.8);
+    backdrop-filter: 20px;
+    box-shadow: insert 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
